@@ -92,8 +92,8 @@ window = sg.Window('Mot Editor 2000', layout)
 
 
 while True:
-    event, values = window.Read()
     mot_file = sg.popup_get_file('Select the mot you wish to edit', file_types=(("Mot Files", "*.mot"),), )
+    event, values = window.Read()
     print(event)
     if event in (None, 'Quit'):
         quit()
